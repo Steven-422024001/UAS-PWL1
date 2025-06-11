@@ -7,6 +7,20 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+/**
+ * Class Book.
+ * 
+ * @author steven <steven.422024001@ukrida.ac.id>
+ * 
+ * @OA\Schema(
+ *     description="Book model",
+ *     title="Book model",
+ *     @OA\Xml(
+ *         name="Book"
+ *     )
+ * )
+ */
+
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
