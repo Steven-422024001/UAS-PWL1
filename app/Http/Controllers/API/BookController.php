@@ -216,7 +216,8 @@ class BookController extends Controller
      *             type="integer",
      *             format="int64"
      *         )
-     *     )
+     *     ),
+     *     security={{"passport_token_ready"={}, "passport"={}}}
      * )
      */
     public function destroy($id)
