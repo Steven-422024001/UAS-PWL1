@@ -141,7 +141,7 @@
                 ]
             }
         },
-        "/my-api/public/api/book": {
+        "/api/book": {
             "get": {
                 "tags": [
                     "book"
@@ -205,7 +205,7 @@
                 }
             }
         },
-        "/my-api/public/api/book/{id}": {
+        "/api/book/{id}": {
             "get": {
                 "tags": [
                     "book"
