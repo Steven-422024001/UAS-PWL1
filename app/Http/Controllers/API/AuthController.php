@@ -126,7 +126,6 @@ class AuthController extends Controller
      *     tags={"user"},
      *     summary="Log out & destroy self token",
      *     operationId="logout",
-     *     security={{"passport:{}}}
      *     @OA\Response(
      *         response=400,
      *         description="Invalid input",
@@ -137,9 +136,9 @@ class AuthController extends Controller
      *         description="successful",
      *         @OA\JsonContent()
      *     ),
+     *     security={{"passport_token_ready":{},"passport":{}}}
      * )
      */
-     
     public function logout(Request $request){
         try {
             $token = $request->user()->token();
