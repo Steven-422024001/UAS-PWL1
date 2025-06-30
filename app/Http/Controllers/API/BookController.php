@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use App\Models\Book;
+
 use OpenApi\Annotations as OA;
 use Illuminate\Support\Facades\Auth;
 
@@ -36,7 +37,7 @@ class BookController extends Controller
 {
     /**
      * @OA\Get(
-     *     path="/my-api/public/api/book",
+     *     path="/book",
      *     tags={"book"},
      *     summary="Display a listing of items",
      *     operationId="index",
@@ -153,7 +154,7 @@ class BookController extends Controller
     }
     /**
      * @OA\Post(
-     *     path="/my-api/public/api/book",
+     *     path="/api/book",
      *     tags={"book"},
      *     summary="Store a newly created item",
      *     operationId="store",
@@ -208,7 +209,7 @@ class BookController extends Controller
     }
     /**
      * @OA\Get(
-     *     path="/my-api/public/api/book/{id}",
+     *     path="/book/{id}",
      *     tags={"book"},
      *     summary="Display the specified item",
      *     operationId="show",
@@ -253,7 +254,7 @@ class BookController extends Controller
     }
     /**
      * @OA\Put(
-     *     path="/my-api/public/api/book/{id}",
+     *     path="/book/{id}",
      *     tags={"book"},
      *     summary="Update the specified item",
      *     operationId="update",
@@ -320,7 +321,7 @@ class BookController extends Controller
     }
     /**
      * @OA\Delete(
-     *     path="/my-api/public/api/book/{id}",
+     *     path="/book/{id}",
      *     tags={"book"},
      *     summary="Remove the specified item",
      *     operationId="destroy",

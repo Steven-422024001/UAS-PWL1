@@ -13,7 +13,20 @@ return new class extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->text('title');
+            $table->string('author', 100)->nullable();
+            $table->string('publisher', 100)->nullable();
+            $table->string('publication_year', 4)->nullable();
+            $table->text('cover')->nullable();
+            $table->text('description')->nullable();
+            $table->double('price')->nullable();
+
+            $table->timestamp('created_at')->useCurrent(); // default now()
+            $table->integer('created_by')->nullable();
+            $table->timestamp('updated-at')->nullable();
+            $table->integer('updated_by')->nullable();
+            $table->timestamp('deleted_at')->nullable();
+            $table->integer('deleted_by')->nullable();
         });
     }
 

@@ -1,13 +1,17 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "My Ist REST API",
-        "description": "This is the API documentation for my very first REST API.",
+        "title": "My API Documentation",
+        "description": "Dokumentasi API dari project Laravel",
         "version": "1.0.0"
     },
     "servers": [
         {
-            "url": "/my-api/public"
+            "url": "http://localhost/my-api/public",
+            "description": "Local Server"
+        },
+        {
+            "url": "/my-api/public/api"
         }
     ],
     "paths": {
@@ -104,6 +108,17 @@
                 ],
                 "summary": "Log out & destroy self token",
                 "operationId": "logout",
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "path",
+                        "description": "User Email",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "400": {
                         "description": "Invalid input",
@@ -130,7 +145,7 @@
                 ]
             }
         },
-        "/my-api/public/api/book": {
+        "/book": {
             "get": {
                 "tags": [
                     "book"
@@ -207,7 +222,9 @@
                         "passport": []
                     }
                 ]
-            },
+            }
+        },
+        "/api/book": {
             "post": {
                 "tags": [
                     "book"
@@ -262,7 +279,7 @@
                 ]
             }
         },
-        "/my-api/public/api/book/{id}": {
+        "/book/{id}": {
             "get": {
                 "tags": [
                     "book"
@@ -446,14 +463,14 @@
     },
     "components": {
         "schemas": {
-            "User": {
+            "Book": {
                 "title": "Book model",
                 "description": "Book model",
                 "xml": {
                     "name": "Book"
                 }
             },
-            "Book": {
+            "User": {
                 "title": "Book model",
                 "description": "Book model",
                 "xml": {

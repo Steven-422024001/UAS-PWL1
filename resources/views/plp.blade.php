@@ -1,5 +1,7 @@
-@extends('layouts.app.public')
+@extends('layouts.app-public')
+
 @section('title', 'Shop')
+
 @section('content')
 <div class="site-wrapper-reveal">
     <!-- Product Area Start -->
@@ -135,8 +137,11 @@
     <!-- Product Area End -->
 </div>
 @endsection
+
 @section('addition_css')
+<!-- Tambahan CSS jika perlu -->
 @endsection
+
 @section('addition_script')
-    <script src="{{asset('pages/js/plp.js')}}"></script>
+<script src="{{ asset('pages/js/plp.js') }}"></script>
 @endsection

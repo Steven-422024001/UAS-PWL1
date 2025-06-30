@@ -43,9 +43,9 @@ return [
 
         'api' => [
             'driver' => 'passport', //gunakan password API guard
-            'provider' => 'users',  
-        ]       
-    ],
+        'provider' => 'users',  
+    ]    
+],
 
     /*
     |--------------------------------------------------------------------------

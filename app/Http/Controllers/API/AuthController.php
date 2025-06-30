@@ -15,6 +15,20 @@ use OpenApi\Annotations as OA;
  * 
  * @author  Steven <steven.422024001@civitas.ukrida.ac.id>
  */
+
+/**
+ * @OA\Info(
+ *     version="1.0.0",
+ *     title="My API Documentation",
+ *     description="Dokumentasi API dari project Laravel"
+ * )
+ *
+ * @OA\Server(
+ *     url="http://localhost/my-api/public",
+ *     description="Local Server"
+ * )
+ */
+
 class AuthController extends Controller
 {
     /**
@@ -56,7 +70,7 @@ class AuthController extends Controller
             $request['password'] = Hash::make($request['password']);
             $request['remember_token'] = \Illuminate\Support\Str::random(10);
             $user = User::create($request->toArray());
-            $token = $user->createToken('<list-name> REST API')->accessToken; // string inside createToken is the token name
+            $token = $user->createToken('<list-name> REST API')->accessToken;
             return response()->json(
                 array('name'=> $request->name, 'email' => $request->get('email'), 'token' => $token),
                 200
@@ -136,6 +150,15 @@ class AuthController extends Controller
      *         description="successful",
      *         @OA\JsonContent()
      *     ),
+     *     @OA\Parameter(
+     *         name="email",
+     *         in="path",
+     *         description="User Email",
+     *         required=true,
+     *         @OA\Schema(
+     *             type="string"
+     *         )
+     *     ),
      *     security={{"passport_token_ready":{},"passport":{}}}
      * )
      */
@@ -146,6 +169,6 @@ class AuthController extends Controller
             return response()->json(array('message' => 'You have been successfully logged out!'), 200);
         } catch (\Exception $exception) {
             throw new HttpException(400, "Invalid data : {$exception->getMessage()}");
-        }
-    }
+}
+}
 }
