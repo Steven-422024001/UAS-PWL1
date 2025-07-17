@@ -33,8 +33,8 @@
                             "example": {
                                 "name": "omadilo crocodilo",
                                 "email": "akukamu@gmail.com",
-                                "password": "anjayakubohong",
-                                "password_confirmation": "anjayakubohong"
+                                "password": "backtofuture",
+                                "password_confirmation": "backtofuture"
                             }
                         }
                     }
@@ -76,7 +76,7 @@
                             },
                             "example": {
                                 "email": "akukamu@gmail.com",
-                                "password": "anjayakubohong"
+                                "password": "backtofuture"
                             }
                         }
                     }

@@ -14,36 +14,36 @@
 
                             <div class="easyzoom-style">
                                 <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{asset('assets/images/product/single-product-01.webp')}}"
+                                    <a href="{{asset('assets/images/product/product1.jpeg')}}"
                                        class="popup-img product-img-main-href">
-                                        <img src="{{asset('assets/images/product/single-product-01.webp')}}"
+                                        <img src="{{asset('assets/images/product/product1.jpeg')}}"
                                              class="img-fluid product-img-main-src" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="easyzoom-style">
                                 <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{asset('assets/images/product/single-product-02.webp')}}"
+                                    <a href="{{asset('assets/images/product/product2.jpeg')}}"
                                        class="popup-img">
-                                        <img src="{{asset('assets/images/product/single-product-03.webp')}}"
+                                        <img src="{{asset('assets/images/product/product2.jpeg')}}"
                                              class="img-fluid" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="easyzoom-style">
                                 <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{asset('assets/images/product/single-product-03.webp')}}"
+                                    <a href="{{asset('assets/images/product/sproduct3.jpeg')}}"
                                        class="popup-img">
-                                        <img src="{{asset('assets/images/product/single-product-03.webp')}}"
+                                        <img src="{{asset('assets/images/product/product3.jpeg')}}"
                                              class="img-fluid" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="easyzoom-style">
                                 <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{asset('assets/images/product/single-product-04.webp')}}"
+                                    <a href="{{asset('assets/images/product/product1.jpeg')}}"
                                        class="popup-img">
-                                        <img src="{{asset('assets/images/product/single-product-04.webp')}}"
+                                        <img src="{{asset('assets/images/product/product1.jpeg')}}"
                                              class="img-fluid" alt="">
                                     </a>
                                 </div>
@@ -51,13 +51,13 @@
                         </div>
 
                         <div class="product-details-thumbs-2 slider-thumbs-2">
-                            <div class="sm-image"><img src="{{asset('assets/images/product/small/1-100x100.webp')}}"
+                            <div class="sm-image"><img src="{{asset('assets/images/product/small/product1.jpeg')}}"
                                                        alt="product image thumb" class="product-img-main-src"></div>
-                            <div class="sm-image"><img src="{{asset('assets/images/product/small/2-100x100.webp')}}"
+                            <div class="sm-image"><img src="{{asset('assets/images/product/small/product2.jpeg')}}"
                                                        alt="product image thumb"></div>
-                            <div class="sm-image"><img src="{{asset('assets/images/product/small/3-100x100.webp')}}"
+                            <div class="sm-image"><img src="{{asset('assets/images/product/small/product3.jpeg')}}"
                                                        alt="product image thumb"></div>
-                            <div class="sm-image"><img src="{{asset('assets/images/product/small/4-100x100.webp')}}"
+                            <div class="sm-image"><img src="{{asset('assets/images/product/small/product4.jpeg')}}"
                                                        alt="product image thumb"></div>
                         </div>
                     </div>
